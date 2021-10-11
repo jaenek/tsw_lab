@@ -1,0 +1,91 @@
+.header {
+    background-image: linear-gradient(to top, #f3c199, #86d5e2);
+}
+
+.menu {
+    width: 20%;
+    float: left;
+}
+
+.main {
+    width: 80%;
+    float: left;
+}
+
+.table {
+    width: 100%;
+}
+
+.table-header {
+    background-color: #dd0000;
+}
+
+.table > tbody > tr:nth-child(odd) {
+    color: darkgray;
+    background-color: whitesmoke;
+}
+
+.table > tbody > tr:nth-child(even) {
+    color: whitesmoke;
+    background-color: darkgray;
+}
+
+.table > tbody > tr:hover {
+    color: whitesmoke;
+    background-color: darkslategray;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+.opinions {
+    display: flex;
+}
+
+.opinions .opinion {
+    padding: 10px;
+}
+
+@media (min-width: 990px) {
+}
+
+@media (min-width: 767px) and (max-width: 989px) {
+    .opinions {
+        flex-wrap: wrap;
+    }
+    .opinions .opinion {
+        width: calc(80% / 3);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 766px) {
+    .opinions {
+        flex-wrap: wrap;
+    }
+    .opinions .opinion {
+        width: calc(80% / 2);
+    }
+}
+
+@media (max-width: 575px) {
+    .opinions {
+        flex-wrap: wrap;
+    }
+}
+
+@media print {
+    body {
+        color: black;
+        background-color: white;
+    }
+
+    .header, .menu, .video, .footer {
+        display: none;
+    }
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+}
