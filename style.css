@@ -1,10 +1,21 @@
 .header {
-    background-image: linear-gradient(to top, #f3c199, #86d5e2);
+    background-image: linear-gradient(#e9e8e7, #d4213d);
 }
 
 .menu {
     width: 20%;
     float: left;
+}
+
+nav > ul {
+    background-color: #e9e8e7;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav > ul > a > li {
+    width: 100%;
+    padding: 10px 20px;
 }
 
 .main {
@@ -69,6 +80,14 @@ img, video {
 }
 
 @media (max-width: 575px) {
+    .menu {
+        float: none;
+    }
+    
+    .main {
+        float: none;
+    }
+
     .opinions {
         flex-wrap: wrap;
     }

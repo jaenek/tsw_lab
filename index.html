@@ -1,91 +1,137 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salon Samochodowy</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Samochodowy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-<header class="header">
-    <svg height="100" width="250">
-        <circle cx="50" cy="50" r="120" stroke="green" stroke-width="4" fill="yellow"/>
-        <text x="0" y="15" fill="red" transform="rotate(20 20,40)">SALON POLSKIEGO FIATA</TEXT>
-    </svg>
-</header>
+    <header class="header">
+        <svg height="100" width="250">
+            <circle cx="50" cy="50" r="180" stroke="black" stroke-width="4" fill="#e9e8e7" />
+            <text x="0" y="15" fill="red" transform="rotate(20 0,70)">SALON POLSKIEGO FIATA</text>
+        </svg>
+    </header>
 
-<aside class="menu">
-    <nav>
-        <ul>
-            <li><a href="home">Główna</a></li>
-            <li><a href="catalog">Katalog samochodów</a></li>
-            <li><a href="services">Usługi</a></li>
-            <li><a href="contact">Kontakt</a></li>
-            <li><a href="about">O firmie</a></li>
-        </ul>
-    </nav>
-</aside>
+    <aside class="menu">
+        <nav>
+            <ul>
+                <a href="home">
+                    <li>Główna</li>
+                </a>
+                <a href="catalog">
+                    <li>Katalog samochodów</li>
+                </a>
+                <a href="services">
+                    <li>Usługi</li>
+                </a>
+                <a href="contact">
+                    <li>Kontakt</li>
+                </a>
+                <a href="about">
+                    <li>O firmie</li>
+                </a>
+            </ul>
+        </nav>
+    </aside>
 
-<main class="main">
-    <section>
-        <h2>Samochody</h2>
-        <table class="table">
-            <thead>
-                <th>Model</th><th>Rocznik</th><th>Przebieg</th><th colspan="3">Pozostałe Parametry</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Fiat 125p</td><td>1983</td><td>144002km</td><td>Silnik OHV 1300</td><td>4-drzwiowy</td><td>zbiornik 45l</td>
-                </tr>
-                <tr>
-                    <td>Fiat 126p</td><td>1995</td><td>69142km</td><td>Silnik R2 652cm^3 24KM</td><td>2-drzwiowy kabriolet</td><td>zbiornik 21l</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <main class="main">
+        <section>
+            <h2>Samochody</h2>
+            <table class="table">
+                <thead>
+                    <th>Model</th>
+                    <th>Rocznik</th>
+                    <th>Przebieg</th>
+                    <th colspan="3">Pozostałe Parametry</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fiat 125p</td>
+                        <td>1983</td>
+                        <td>144002km</td>
+                        <td>Silnik OHV 1300</td>
+                        <td>4-drzwiowy</td>
+                        <td>zbiornik 45l</td>
+                    </tr>
+                    <tr>
+                        <td>Fiat 126p</td>
+                        <td>1995</td>
+                        <td>69142km</td>
+                        <td>Silnik R2 652cm^3 24KM</td>
+                        <td>2-drzwiowy kabriolet</td>
+                        <td>zbiornik 21l</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <section>
-        <h2>Galeria</h2>
-        <img src="fiat_125p.jpg" alt="Fiat 125p z silnkiem 1300 OHV" width="400px">
-        <img src="fiat_126p_cabrio.jpg" alt="Fiat 126p w wersji cabrio" width="400px">
-    </section>
+        <section>
+            <h2>Galeria</h2>
+            <img src="fiat_125p.jpg" alt="Fiat 125p z silnkiem 1300 OHV" width="400px">
+            <img src="fiat_126p_cabrio.jpg" alt="Fiat 126p w wersji cabrio" width="400px">
+        </section>
 
-    <section class="video">
-        <h2>Wideo</h2>
-        <video width="400px" controls><source src="Polish Fiat 126P - 12463.mp4" type="video/mp4"></video>
-    </section>
+        <section class="video">
+            <h2>Wideo</h2>
+            <video width="400px" controls>
+                <source src="Polish Fiat 126P - 12463.mp4" type="video/mp4">
+            </video>
+        </section>
 
-    <section>
-        <h2>Opinie</h2>
-        <div class="opinions">
-            <article class="opinion">
-                <h3>Opinia 1</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
-                </p>
-            </article>
-            <article class="opinion">
-                <h3>Opinia 2</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
-                </p>
-            </article>
-            <article class="opinion">
-                <h3>Opinia 3</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
-                </p>
-            </article>
-        </div>
-    </section>
-</main>
+        <section>
+            <h2>Opinie</h2>
+            <div class="opinions">
+                <article class="opinion">
+                    <h3>Opinia 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
+                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
+                        a. Laborum harum est accusantium nobis?
+                    </p>
+                </article>
+                <article class="opinion">
+                    <h3>Opinia 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
+                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
+                        a. Laborum harum est accusantium nobis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
+                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
+                        a. Laborum harum est accusantium nobis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
+                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
+                        a. Laborum harum est accusantium nobis?
+                    </p>
+                </article>
+                <article class="opinion">
+                    <h3>Opinia 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
+                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
+                        a. Laborum harum est accusantium nobis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
+                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
+                        a. Laborum harum est accusantium nobis?
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-<footer class="footer">
-    <p>Copyright &copy; JM</p>
-</footer>
+    <footer class="footer">
+        <div id="contact-info"></div>
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> Jan Maślanka
+        </p>
+        <hr>
+        Liczba odwiedzin: <span id="visit-counter"></span>
+    </footer>
 
 </body>
+
 </html>
