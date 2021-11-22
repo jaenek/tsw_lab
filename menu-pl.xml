@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<item>
+		<title>Główna</title>
+		<link>#top</link>
+	</item>
+	<item>
+		<title>Katalog</title>
+		<link>#top</link>
+	</item>
+	<item>
+		<title>Usługi</title>
+		<link>#top</link>
+	</item>
+	<item>
+		<title>Kontakt</title>
+		<link>#top</link>
+	</item>
+	<item>
+		<title>O firmie</title>
+		<link>#top</link>
+	</item>
+	<item>
+		<title>Facebook</title>
+		<link>#top</link>
+	</item>
+	<item>
+		<title>Instagram</title>
+		<link>#top</link>
+	</item>
+</menu>

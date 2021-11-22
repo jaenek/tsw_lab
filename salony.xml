@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="salony-xform.xsl"?>
+<dealerships>
+	<dealership>
+		<name>Salon w Rzeszowie</name>
+		<location>50.02838799374642, 22.011409756579955</location>
+	</dealership>
+	<dealership>
+		<name>Salon w Warszawie</name>
+		<location>52.31035652302913, 21.092191370487733</location>
+	</dealership>
+	<dealership>
+		<name>Salon w Lublinie</name>
+		<location>51.240138191316554, 22.549218972685715</location>
+	</dealership>
+	<dealership>
+		<name>Salon w Krakowie</name>
+		<location>50.08809881569544, 19.895439515513193</location>
+	</dealership>
+</dealerships>

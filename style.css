@@ -7,13 +7,14 @@
     float: left;
 }
 
-nav > ul {
+nav>ul {
     background-color: #e9e8e7;
     list-style-type: none;
     padding: 0px;
 }
 
-nav > ul > a > li {
+nav>ul>a>li,
+nav>ul>div>a>li {
     width: 100%;
     padding: 10px 20px;
 }
@@ -31,22 +32,23 @@ nav > ul > a > li {
     background-color: #dd0000;
 }
 
-.table > tbody > tr:nth-child(odd) {
+.table>tbody>tr:nth-child(odd) {
     color: darkgray;
     background-color: whitesmoke;
 }
 
-.table > tbody > tr:nth-child(even) {
+.table>tbody>tr:nth-child(even) {
     color: whitesmoke;
     background-color: darkgray;
 }
 
-.table > tbody > tr:hover {
+.table>tbody>tr:hover {
     color: whitesmoke;
     background-color: darkslategray;
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
 }
 
@@ -58,8 +60,11 @@ img, video {
     padding: 10px;
 }
 
-@media (min-width: 990px) {
+#map {
+    height: 400px;
 }
+
+@media (min-width: 990px) {}
 
 @media (min-width: 767px) and (max-width: 989px) {
     .opinions {
@@ -83,11 +88,9 @@ img, video {
     .menu {
         float: none;
     }
-    
     .main {
         float: none;
     }
-
     .opinions {
         flex-wrap: wrap;
     }
@@ -98,8 +101,10 @@ img, video {
         color: black;
         background-color: white;
     }
-
-    .header, .menu, .video, .footer {
+    .header,
+    .menu,
+    .video,
+    .footer {
         display: none;
     }
 }

@@ -7,67 +7,27 @@
     <title>Salon Samochodowy</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 
 <body>
     <header class="header">
         <svg height="100" width="250">
             <circle cx="50" cy="50" r="180" stroke="black" stroke-width="4" fill="#e9e8e7" />
-            <text x="0" y="15" fill="red" transform="rotate(20 0,70)">SALON POLSKIEGO FIATA</text>
+            <text x="0" y="15" fill="red" transform="rotate(20 0,70)">SALON POLSKICH LEGEND</text>
         </svg>
     </header>
 
     <aside class="menu">
         <nav>
-            <ul>
-                <a href="home">
-                    <li>Główna</li>
-                </a>
-                <a href="catalog">
-                    <li>Katalog samochodów</li>
-                </a>
-                <a href="services">
-                    <li>Usługi</li>
-                </a>
-                <a href="contact">
-                    <li>Kontakt</li>
-                </a>
-                <a href="about">
-                    <li>O firmie</li>
-                </a>
-            </ul>
         </nav>
     </aside>
 
     <main class="main">
         <section>
             <h2>Samochody</h2>
-            <table class="table">
-                <thead>
-                    <th>Model</th>
-                    <th>Rocznik</th>
-                    <th>Przebieg</th>
-                    <th colspan="3">Pozostałe Parametry</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fiat 125p</td>
-                        <td>1983</td>
-                        <td>144002km</td>
-                        <td>Silnik OHV 1300</td>
-                        <td>4-drzwiowy</td>
-                        <td>zbiornik 45l</td>
-                    </tr>
-                    <tr>
-                        <td>Fiat 126p</td>
-                        <td>1995</td>
-                        <td>69142km</td>
-                        <td>Silnik R2 652cm^3 24KM</td>
-                        <td>2-drzwiowy kabriolet</td>
-                        <td>zbiornik 21l</td>
-                    </tr>
-                </tbody>
-            </table>
+            <table class="table models"></table>
         </section>
 
         <section>
@@ -89,47 +49,44 @@
                 <article class="opinion">
                     <h3>Opinia 1</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
-                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
-                        a. Laborum harum est accusantium nobis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
                     </p>
                 </article>
                 <article class="opinion">
                     <h3>Opinia 2</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
-                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
-                        a. Laborum harum est accusantium nobis?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
-                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
-                        a. Laborum harum est accusantium nobis?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
-                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
-                        a. Laborum harum est accusantium nobis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis? Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
                     </p>
                 </article>
                 <article class="opinion">
                     <h3>Opinia 3</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
-                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
-                        a. Laborum harum est accusantium nobis?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem
-                        deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati
-                        a. Laborum harum est accusantium nobis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Delectus cupiditate voluptatem deserunt magnam odio quos distinctio suscipit sint nihil mollitia incidunt eos, quas obcaecati a. Laborum harum est accusantium nobis?
                     </p>
                 </article>
             </div>
         </section>
+
+        <section>
+            <h2>Sieć salonów</h2>
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVMG5B8JrvyGFtsYFDU9fJqfcgY4fwAT4&callback=initMap" async></script>
+        </section>
     </main>
 
+
     <footer class="footer">
+        <h2>Dane kontaktowe</h2>
         <div id="contact-info"></div>
         <p>Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> Jan Maślanka
+            <script>
+                document.write(new Date().getFullYear());
+            </script> Jan Maślanka
         </p>
-        <hr>
-        Liczba odwiedzin: <span id="visit-counter"></span>
+        <hr> Liczba odwiedzin: <span id="visit-counter"></span>
     </footer>
 
 </body>

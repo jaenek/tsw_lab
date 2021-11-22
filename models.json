@@ -1,0 +1,26 @@
+[{
+        "id": 1,
+        "maker": "Fiat",
+        "model": "125p",
+        "production_year": 1983,
+        "mileage": 44002,
+        "parameters": [
+            "Silnik OHV 1300",
+            "4-drzwiowy",
+            "zbiornik 45l"
+        ]
+    },
+    {
+        "id": 2,
+        "maker": "Fiat",
+        "model": "126p",
+        "production_year": 1995,
+        "mileage": 69142,
+        "parameters": [
+            "Silnik R2 652cm^3 24KM",
+            "2-drzwiowy",
+            "kabriolet",
+            "zbiornik 21l"
+        ]
+    }
+]
